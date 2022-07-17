@@ -4,10 +4,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Root {
+public class Ping {
 
-    @GetMapping("/")
+    @GetMapping("/ping")
     public String response() {
-        return "Hello!";
+        return "Pong";
     }
 }

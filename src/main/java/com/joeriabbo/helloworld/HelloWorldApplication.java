@@ -16,15 +16,4 @@ public class HelloWorldApplication {
         SpringApplication.run(HelloWorldApplication.class, args);
     }
 
-    @GetMapping("/")
-    public String root() {
-        Root r = new Root();
-        return r.response();
-    }
-
-    @GetMapping("/hello")
-    public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
-        Hello h = new Hello();
-        return h.response(name);
-    }
 }
