@@ -1,6 +1,7 @@
 package com.joeriabbo.helloworld.routes;
 
 import com.joeriabbo.helloworld.HelloWorldApplication;
+import com.joeriabbo.helloworld.Routes.Root;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -16,7 +17,7 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 class RootTests {
 
     @InjectMocks
-    private HelloWorldApplication mainController;
+    private Root mainController;
 
     private MockMvc mockMvc;
 
