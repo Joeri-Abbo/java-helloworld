@@ -1,19 +1,19 @@
 package com.joeriabbo.helloworld.routes;
 
-import com.joeriabbo.helloworld.HelloWorldApplication;
 import com.joeriabbo.helloworld.Routes.Root;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
-@SpringBootTest
+@ExtendWith(MockitoExtension.class)
 class RootTests {
 
     @InjectMocks
